@@ -14,6 +14,28 @@ Configure Computer
 1. Azure CLI v2: If you do not have the Azure CLI v2 installed on your computer, click [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) for the different operating systems.
 2. Install docker: Click [here](https://docs.docker.com/docker-for-mac/install/) for Mac OSX. Click [here](https://docs.docker.com/docker-for-windows/install/) for Windows.
 
+### Create Docker-Machine
+
+```
+# Not needed for cloud shell
+az login
+
+az group create \
+    --name <resource_group_name>
+    --location canadacentral 
+
+az account list
+
+docker-machine create \
+    --driver azure \
+    --azure-subscription-id <azure_subscription_id> \
+    --azure-image  "Canonical:UbuntuServer:16.04-LTS:latest" \
+    --azure-vm-size "Standard_D2_v2" \
+    --azure-resource-group <azure_resource_group> \
+    --azure-location <azure_datacentre_location> \
+    docker-machine-<your_alias>
+```
+
 ### Validating Tools & Getting Started:
 1. Check Azure CLI is working:
 ```bash
