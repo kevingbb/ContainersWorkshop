@@ -51,7 +51,7 @@ az acr repository list --name <acrName> --username <acrName> --password <acrPass
 ### Create Container Orchestrator
 This section will take us through the steps of creating a new Container Cluster with Kubernetes as the Orchestrator using Azure Container Service, also known as ACS.
 
-![](../../images/01_azure_container_services.png)
+![](../../images/03_b_deploy.png)
 
 ```bash
 # Create Cluster Command.
