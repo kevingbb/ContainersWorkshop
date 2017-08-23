@@ -5,8 +5,8 @@ In this lab you will find the prerequisites and steps to help you set up your co
 Configure Computer
 -----------------------
 
-###Two Options
-1. [Azure Clooud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+### Two Options
+1. [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
 2. Install Necessary Tools
 
 ### Installing Necessary Tools:
