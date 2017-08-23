@@ -2,6 +2,8 @@ Create Cluster
 ========================================
 In this section you will create a Private Container Regsitry as well as spinning up a Container Orchestrator using Azure Container Services (ACS).
 
+![](./images/00_workshop_overview.png)
+
 Configure Azure Environment
 -----------------------
 
@@ -20,6 +22,9 @@ az configure -d group=myResourceGroup location=eastus
 
 ### Create Azure Container Registry
 This section will take us through the steps of creating a Private Container Registry using Azure Container Regsitry, also known as ACR. The registry is what holds the Docker images we will be using to run workloads.
+
+![](./images/01_azure_container_services.png)
+
 
 ```bash
 az acr create --resource-group myResourceGroup --name myContainerRegistry --sku Basic --admin-enabled true
