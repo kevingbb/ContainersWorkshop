@@ -8,6 +8,9 @@ Run App
 ### Setup Environment for Sample App
 This section will take us through the steps of setting up the environment so that the K8s cluster can connect to our private repo in ACR and pull down images.
 
+![](../../images/04_altogether.png)
+
+
 ```bash
 # Create environment variables so that things like passwords are not in plain text.
 export DOCKER_REGISTRY=$(az acr show --resource-group myResourceGroup --name myK8sCluster-<alias> --query loginServer --output tsv)
@@ -28,6 +31,8 @@ Explore the azure-vote.yaml file. This is an example of a K8s configuration file
 
 ### Deploy the App & Test.
 Explore the azure-vote.yaml file. This is an example of a K8s configuration file that we will be using to deploy our sample application.
+
+![](../../images/03_deploy.png)
 
 ```bash
 # Run K8s File.
