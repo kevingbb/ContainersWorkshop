@@ -7,6 +7,7 @@ Configure Computer
 
 ### Two Options
 1. [Azure Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+![](../../images/cloud_shell.png)
 2. Install Necessary Tools
 
 ### Installing Necessary Tools:
