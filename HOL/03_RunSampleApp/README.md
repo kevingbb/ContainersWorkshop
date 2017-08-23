@@ -5,7 +5,7 @@ In this section we will run a sample application on the Cluster created in Lab 2
 Run App
 -----------------------
 
-### Setup Environment and Run Sample App
+### Setup Environment for Sample App
 This section will take us through the steps of setting up the environment so that the K8s cluster can connect to our private repo in ACR and pull down images.
 
 ```bash
@@ -21,9 +21,6 @@ kubectl create secret docker-registry <alias>-secret \
     --docker-password=${DOCKER_PASSWORD} \
     --docker-email=<alias>@microsoft.com \
     --namespace=default --save-config
-
-# Run K8s File.
-kubectl create -f azure-vote.yaml
 ```
 
 ### Explore Kube Config File.
