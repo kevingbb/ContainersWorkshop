@@ -17,7 +17,7 @@ Configure Computer
 ### Create Docker-Machine
 
 ```
-# Not needed for cloud shell
+# Not needed for cloud shell - you're already logged in
 az login
 
 az group create \
@@ -28,12 +28,12 @@ az account list
 
 docker-machine create \
     --driver azure \
-    --azure-subscription-id <azure_subscription_id> \
+    --azure-subscription-id <subscription_id> \
     --azure-image  "Canonical:UbuntuServer:16.04-LTS:latest" \
-    --azure-vm-size "Standard_D2_v2" \
-    --azure-resource-group <azure_resource_group> \
-    --azure-location <azure_datacentre_location> \
-    docker-machine-<your_alias>
+    --azure-size "Standard_D2_v2" \
+    --azure-resource-group docker-machine-<alias> \
+    --azure-location canadacentral \
+    docker-machine-<alias>
 ```
 
 ### Validating Tools & Getting Started:
