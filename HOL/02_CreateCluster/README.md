@@ -23,7 +23,7 @@ az configure -d group=myResourceGroup location=eastus
 ### Create Azure Container Registry
 This section will take us through the steps of creating a Private Container Registry using Azure Container Regsitry, also known as ACR. The registry is what holds the Docker images we will be using to run workloads.
 
-![](../../images/02_b_azure_container_registry.png)
+![](../../images/02_b_azure_container_registry_deploy.png)
 
 
 ```bash
