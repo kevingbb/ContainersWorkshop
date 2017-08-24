@@ -16,7 +16,7 @@ Configure Computer
 
 ### Create Docker-Machine
 
-We will use the docker-machine command to provision a VM to Azure and install the Docker engine on to it.  This remote Docker host will be used to pull and push container images to a registry and build custom images from.  We do this by configuring our local Docker Environment variablesto "point to" the remote Docker host.  This will allow us to run Docker commands from our local terminal, but the commands will actually execute remotely on the Docker host.
+We will use the ```docker-machine``` command to provision a VM to Azure and install the Docker engine on to it.  This remote Docker host will be used to pull and push container images to a registry and build custom images from.  We do this by configuring our local Docker Environment variablesto "point to" the remote Docker host.  This will allow us to run Docker commands from our local terminal, but the commands will actually execute remotely on the Docker host.
 
 ![](../../images/03_c_docker-machine.png)
 
